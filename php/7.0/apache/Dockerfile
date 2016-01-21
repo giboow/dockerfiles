@@ -37,4 +37,5 @@ RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 
 # add user to group for volume sharing
-RUN useradd -G 1000 www-data
+RUN groupadd 1000
+RUN usermod -a -G 1000 www-data
