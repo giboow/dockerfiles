@@ -6,6 +6,6 @@ RUN mkdir /nodejs && curl http://nodejs.org/dist/v5.5.0/node-v5.5.0-linux-x64.ta
 ENV PATH $PATH:/nodejs/bin
 
 # global install gulp and jshint
-RUN npm install -g jshint gulp
+RUN npm install -g jshint gulp bower
 
 WORKDIR /data
